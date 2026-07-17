@@ -6,6 +6,10 @@ require('dotenv').config();//env
 const connect_db=require('./src/db/db')//database conncetion
 connect_db()
 
+app.get('/',(req,res)=>{
+    res.send('Server is Running.....')
+})
+
 app.listen(PORT,()=>{
 
     console.log(`Server Connected to Port ${PORT} Successfully.....`);
