@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const CTA = () => {
+const Cta = () => {
   return (
     <section className="bg-blue-100 py-10 text-center text-black">
 
@@ -17,4 +17,4 @@ const CTA = () => {
   );
 };
 
-export default CTA;
+export default Cta;

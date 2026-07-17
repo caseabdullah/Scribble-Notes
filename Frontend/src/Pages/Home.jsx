@@ -1,7 +1,7 @@
 import Hero from "../components/Hero";
 import Features from "../components/Features";
-import CTA from "../components/CTA";
 import Specification from "../components/Specification";
+import Cta from "../components/CTA";
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
       <Hero />
       <Features />
       <Specification />
-      <CTA />
+      <Cta />
     </>
   );
 };
