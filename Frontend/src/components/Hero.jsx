@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";  
 import api from "../api/axios";
-const Hero = () => {
+import { useNavigate } from "react-router-dom";
 
+const Hero = () => {
+const navigate = useNavigate();
   const handleDashboard = async () => {
     try {
       await api.get("/dashboard");
-      window.location.href = "/dashboard";
-
+      navigate("/dashboard");
     } catch {
-      window.location.href = "/login";
+      navigate("/login");
     }
   };
 
@@ -41,7 +42,6 @@ const Hero = () => {
 
             <button
             onClick={handleDashboard}
-            to="/dashboard"
             className="inline-flex items-center gap-2 bg-violet-200 hover:bg-violet-300 transition duration-300 px-5 py-3 rounded-xl font-lg cursor-pointer">
               Go to Dashboard
               <ArrowRight size={25} />
