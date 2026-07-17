@@ -8,7 +8,7 @@ const app=express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin:"https://scribble-notes-delta.vercel.app/",
+    origin:"https://scribblenotes.netlify.app/",
     credentials:true
 }));
 
