@@ -1,7 +1,7 @@
 import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Specification from "../components/Specification";
-import Cta from "../components/CTA";
+import Cta from "../components/Cta";
 
 const Home = () => {
   return (
