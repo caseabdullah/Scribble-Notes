@@ -31,3 +31,12 @@ Scribble is a full-stack MERN notes application that allows users to securely cr
 - Cookie Parser
 
 ## 📂 Project Structure
+```text
+Scribble/
+│
+├── Frontend/        # React frontend
+│
+├── Backend/         # Node + Express backend
+│
+├── .gitignore
+└── README.md
