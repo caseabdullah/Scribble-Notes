@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@layer base{
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+body{
+  background-color: #fef9f6;
+  font-family: "Inter", sans-serif;
+}
+.login{
+  background-color: #fff;
+  border: 1px solid #84a7ec;
+  transition: background-color 0.3s ease-in-out;
+}
+.signup{
+  background-color: #b0c5f0;
+  border: 1px solid #84a7ec;
+  transition: background-color 0.3s ease-in-out;
+}
+.login:hover{
+  background-color: #D1E1F5;
+}
+.signup:hover{
+  background-color:#b9cdf5;
+}.top{
+  color: #6a51f6;
+  letter-spacing: 0.1rem;
+}
+.signin{
+  color: #6a51f6;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: opacity 0.3s ease-in-out;
+}
+.signin:hover{
+  opacity: 70%;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.5s ease-out forwards;
+  border-left: 3px solid red;
+}
